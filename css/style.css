@@ -8,8 +8,8 @@ header, main, footer {
 }
 header, footer {
     border: 1px solid #bbb;
-    padding: 1rem;
-    background-color: pink;
+    padding: 0.5rem;
+    background-color: brown;
 }
 
 header img{
