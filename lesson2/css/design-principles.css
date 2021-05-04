@@ -54,18 +54,3 @@ footer {
     text-align: center;
 }
 
-
-@media screen and ( min-width: 550px){
-    main{
-      grid-template-columns: 1fr 1fr;
-    }
-  }
-
-
-
-  @media screen and ( min-width: 1300px){
-    main{
-      grid-template-columns: 1fr 1fr 1fr;
-    }
-  }
-
