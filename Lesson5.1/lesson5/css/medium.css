@@ -14,3 +14,23 @@
 		display: none;
 	}
 }
+
+.preston {
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+    height: 45em;
+    display:block;
+    border:  1px solid;
+}
+
+.cast {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 60em;
+	height: 15em;
+  }
+
+
+  
