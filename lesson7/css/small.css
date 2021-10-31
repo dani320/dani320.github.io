@@ -1,0 +1,64 @@
+/* Small/Phone View ***************/
+nav {
+  margin: 0 auto;
+  max-width: 760px;
+  background-color: tomato;
+}
+.navigation {
+  list-style: none;
+  padding: 0;
+}
+.navigation li:first-child {
+  display: block;
+}
+.navigation li {
+  display: none;
+}
+.navigation a {
+  display: block;
+  padding: 0.75rem;
+  text-align: left;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+.navigation a:hover {
+  color: white;
+  background-color: black;
+}
+
+/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
+  <ul class="navigation responsive">
+*/
+.responsive li {
+  display: block;
+}
+
+.container {
+  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 1048px;
+}
+
+img {
+  width: 300px;
+  height: auto;
+  margin: 0.5rem;
+  box-shadow: gray 5px 10px;
+}
+figcaption {
+  font-size: medium;
+}
+
+
+
+/* simple opacity */
+.opac {
+  opacity: 0.8;
+}
+.blur {
+  filter: blur(.5px) grayscale(10%);
+}
+
+
