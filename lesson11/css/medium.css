@@ -1,0 +1,36 @@
+/* Media Query for medium+ views */
+@media only screen and (min-width: 32.5em) {
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+}
+
+.preston {
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+    height: 45em;
+    display:block;
+    border:  1px solid;
+}
+
+.cast {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 60em;
+	height: 15em;
+  }
+
+
+  
