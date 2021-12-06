@@ -1,155 +1,181 @@
-/* Small/Phone View ***************/
-nav {
-  margin: 0 auto;
-  max-width: 760px;
-  background-color: tomato;
-}
-.navigation {
-  list-style: none;
-  padding: 0;
-}
-.navigation li:first-child {
-  display: block;
-}
-.navigation li {
-  display: none;
-}
-.navigation a {
-  display: block;
-  padding: 0.75rem;
-  text-align: left;
-  text-decoration: none;
-  color: black;
-  font-weight: 700;
-}
-.navigation a:hover {
-  color: white;
-  background-color: black;
+
+main {
+  background-color: rgba(19, 190, 233, 0.719);
 }
 
-
-footer{
-  text-align: center;
-  border: 1px solid;
-}
-.contact_box{
-  text-align: center;
-}
-
-.responsive li {
-  display: block;
-}
-
-.preston {
-	margin-left: auto;
-	margin-right: auto;
-	width: 90%;
-    height: 45em;
-    display:block;
-    border:  1px solid;
-}
-
-.cast {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 60em;
-  height: auto;
-}
-
-h1, h2{
-  text-align: center;
-}
-
-.article {
-  max-width: 100%;
-  display: block;
-}
-
-
-
-
-
-
-/* Small/Phone View ***************/
-nav {
-  margin: 0 auto;
-  max-width: 760px;
-  background-color: tomato;
-}
-.navigation {
-  list-style: none;
-  padding: 0;
-}
-.navigation li:first-child {
-  display: block;
-}
-.navigation li {
-  display: none;
-}
-.navigation a {
-  display: block;
-  padding: 0.75rem;
-  text-align: left;
-  text-decoration: none;
-  color: black;
-  font-weight: 700;
-}
-.navigation a:hover {
-  color: white;
-  background-color: black;
-}
-
-/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
-  <ul class="navigation responsive">
-*/
-.responsive li {
-  display: block;
-}
-
-.container {
-  margin: 1rem auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  max-width: 1048px;
+.storm{
+background-color: white;
 }
 
 img {
-  width: 300px;
-  height: auto;
-  margin: 0.5rem;
-  box-shadow: gray 5px 10px;
-  
+  max-width: 100%;
 }
-figcaption {
+
+body {
+  margin: 0 auto;
+  background-color: white;
   font-size: medium;
 }
 
+h1, h2, h3, h4, h5, h6 {
 
-
-/* simple opacity */
-.opac {
-  opacity: 0.8;
+  font-family: Helvetica, Arial, sans-serif;
 }
-.blur {
-  filter: blur(.5px) grayscale(10%);
+header {
+  margin:0 auto;
+  text-align: center;
+  background-color: rgb(2, 146, 132);
+  justify-content: center;
+  
 }
 
-
-h1 {
+h2 {
   text-align: center;
 }
 
-main {
+nav {
+  text-align: center;
+  background-color: yellow;
+}
+a {
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li:first-child {
+  display: block;
+}
+
+nav ul li {
+  display: none;
+}
+.responsive li {
+	display: block;
+}
+
+.menu{
+  color:turquoise;
+  background-color: yellow;
+}
+
+.menu:hover {
+  color: white;
+  background-color:turquoise;
+}
+
+.ws-box {
+  position: relative;
+  margin: 0;
+}
+
+.wsummary{
+  text-align: center;
+  margin: 12px 20px -20px 20px;
+  padding: 0;
+  background-color:turquoise;
+}
+.wsummary section{
+  padding: 1rem;
+  color: white;
+  line-height: 90%;
+}
+.wsummary section h4{
+  margin: 0;
+  padding-bottom: 0.5rem; 
+  color: #000;
+}
+.wsummary section p{
+  font-size: 0.9rem;
+  margin: 0;
+}
+.wsummary section p span{
+  color: #000;   
+}
+
+h3 {
+  display: none;
+}
+
+
+.forecast {
+  display: none ;
+}
+
+.city-events{
+  text-align: center;
+  margin: 30px 20px -10px 20px;
+  padding: 0;
+  
+}
+.city-events section{
+  padding: 1rem;
+  color: rgb(0, 0, 0);
+  line-height: 110%;
+
+}
+
+.city-events section h4{
+  margin: 0;
+  color: rgb(0, 0, 0);
+}
+.city-events section p{
+  font-size: 1.3rem;
+  margin: 0.1;
+}
+.article{
+  margin: 20px 0px;
+  font-size: large;
+  
+}
+.article section{
+  padding: 20px;
+  text-align: center;
+  
+}
+
+.article h4{
   text-align: center;
 }
-form {
-  display: inline-block;
+
+div.cards section {
+  
+  text-align: center;
+  margin: 5px;
+  
+}
+section img {
+  max-width: 100%;
 }
 
-form label{
+.contact_box {
+  display: flex;
+  max-width: 100%;
+  padding: 0;
+  background-color: rgb(2, 146, 132);
+}
+
+.map img{
+  max-width: 50%;
+}
+footer {
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 0.9rem;
+}
+
+
+.container{
+  margin: 0 auto;
+  padding: 0px 20px;
+  margin-bottom: 35px;
+}
+
+.thanks {
   text-align: center;
 }
-
-
-

@@ -19,17 +19,21 @@
   <body>
     <header>
       <div class="logo-box">
-      <img src="images/logopic.png" alt="logo weather" />
+        <img src="images/logopic.png" alt="logo weather" />
       </div>
       <h1>Preston 26 Weather</h1>
-      <h2>Catch me if you can</h2>
+      <h2 class="motto">Catch me if you can</h2>
     </header>
 
     <nav>
-      <ul class="navigation">
-        <li><a class="ham" href="#">&#9776;</a></li>
+      <ul class="nonResponsive">
+        <li>
+          <a class="menu" href="#" onclick="openMenu()"
+            ><span class="open">☰ Menu</span></a
+          >
+        </li>
         <li><a href="index.html">Home</a></li>
-        <li><a href="#preston.html">Preston</a></li>
+        <li><a href="preston.html">Preston</a></li>
         <li><a href="sodasprings.html">Soda Springs</a></li>
         <li><a href="fishhaven.html">Fish Haven</a></li>
         <li><a href="stormcenter.html">Storm Center</a></li>
@@ -38,18 +42,117 @@
     </nav>
 
     <main>
-        <h2>Preston Idaho</h2>
-        <div class="contentbox">Hero with weather summary</div>
-        <div class="contentbox">5 Day Forecast</div>
-        <div class="contentbox">Article</div>
-        <div class="contentbox">Contact Information</div>
+      <h2>Soda Springs</h2>
+      <div class="ws-box">
+        <picture>
+          <source media="(min-width: 34.99em)" srcset="images/prestoning.jpeg" />
+          <source media="(min-width: 55.99em)" srcset="images/prestoning.jpeg" />
+          <source media="(min-width: 56em)" srcset="images/prestoning.jpeg" />
+          <img src="images/prestoning.jpeg" alt="preston hero image">
+        </picture>
+        <div class="wsummary">
+          <section>
+              <h4>Weather Summary</h4>
+              <p>Current: <span id="current">scattered clouds</span></p>
+              <p>High: <span><span id="tem">56</span>° F</span></p>
+              <p>wind chill: <span id="wc">15</span>° F</p>
+              <p>Humidity: <span><span id="humidity">20</span>%</span></p>
+              <p>Wind speed: <span><span id="ws">10.56</span> mph.</span></p>
+          </section>
+      </div>
+  </div>
+      </div>
+      <h3>5 Day Forecast</h3>
+      <div class="forecast">
+        
+        <table class="forecast-tab">
+          <tbody>
+            <tr>
+              <th><span id="day1">Monday</span></th>
+              <th><span id="day2">Tuesday</span></th>
+              <th><span id="day3">Wednesday</span></th>
+              <th><span id="day4">Thursday</span></th>
+              <th><span id="day5">Friday</span></th>
+            </tr>
+            <tr class="forecast-td">
+              <td>
+                <img
+                  src="https://openweathermap.org/img/w/04n.png"
+                  alt="broken clouds"
+                /><span>39°F</span>
+              </td>
+              <td>
+                <img
+                  src="https://openweathermap.org/img/w/13n.png"
+                  alt="light snow"
+                /><span>38°F</span>
+              </td>
+              <td>
+                <img
+                  src="https://openweathermap.org/img/w/03n.png"
+                  alt="scattered clouds"
+                /><span>28°F</span>
+              </td>
+              <td>
+                <img
+                  src="http://openweathermap.org/img/wn/13d@2x.png"
+                  alt="snow"
+                /><span>19°F</span>
+              </td>
+              <td>
+                <img
+                  src="https://openweathermap.org/img/w/04n.png"
+                  alt="overcast clouds"
+                /><span>40°F</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="city-events">
+        <section>
+            <h4>Upcoming Events</h4>
+            
+            <div id="events">
+
+            <p>June 15: Water rafting</p><p>July 25-27: Music Festival </p><p>December 8-9: Toys for tots </p></div>
+            
+        </section>
+    </div>
+
+
+      <div class="article">
+        <h4>Idaho Botanical Garden</h4>
+        Idaho Botanical Garden is a private, non-profit corporation existing
+        without state or federal funding. The Garden is completely dependent on
+        tax-deductible contributions from community-minded citizens,
+        corporations, foundations, and site rental. Our mission is to Cultivate.
+        Educate. Celebrate. We grow our community by connecting people, plants
+        and nature. The Idaho Botanical Garden, one of the first and oldest
+        botanical gardens in Idaho, is a lush 15-acre tapestry of dappled shade
+        and vibrant splashes of color. Nestled in the Boise Foothills, it is a
+        sanctuary in the heart of the Old Penitentiary Historic District. The
+        Garden promotes horticulture in the Treasure Valley using native and
+        domestic plants adapted to the intermountain region. <br />
+
+        <a href="https://idahobotanicalgarden.org/about/our-history/"
+          >Read more</a
+        >
+      </div>
+      
     </main>
 
     <footer>
-      &copy; <span id="theyear"></span> Preston 26 Weather | Daniel Florez |
-      BYUI Online Learning
-      <p>Last Modified: <span id="lastmod"></span></p>
-    </footer>
-    <script src="js/index.js"></script>
+      <div class="contact_box">
+        <div class="map">
+          <img src="images/preston_map.jpg" alt="map of preston" />
+        </div>
+        <div class="contact-info">
+          <p>Email: preston26weather@gmail.com</p>
+          <p>Phone Number: (350) 748-7295</p>
+        </div>
+      </div>
+    <script src="js/preston.js"></script>
   </body>
 </html>

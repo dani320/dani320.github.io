@@ -1,31 +1,45 @@
-let imagesToLoad = document.querySelectorAll('img[data-src]');
-const imgOptions = {
-    threshold:2,
-    rootMargin: "0px 0px 10px 0px"
-}
+const date = new Date();
+const year = date.getFullYear();
+document.querySelector('#theyear').textContent = year;
+document.querySelector('#lastmod').textContent = document.lastModified;
 
-const loadImages = (image) => {
-  image.setAttribute('src', image.getAttribute('data-src'));
-  image.onload = () => {image.removeAttribute('data-src');};
+let imagesToLoad = document.querySelectorAll("img[data-src]");
+const imgOptions = {
+  threshold: 2,
+  rootMargin: "0px 0px 10px 0px",
 };
 
+const loadImages = (image) => {
+  image.setAttribute("src", image.getAttribute("data-src"));
+  image.onload = () => {
+    image.removeAttribute("data-src");
+  };
+};
 
-
-if('IntersectionObserver' in window) {
-const observer = new IntersectionObserver((items, observer) => {
+if ("IntersectionObserver" in window) {
+  const observer = new IntersectionObserver((items, observer) => 
+  {
     items.forEach((item) => {
-    if(item.isIntersecting) {
+      if (item.isIntersecting) {
         loadImages(item.target);
         observer.unobserve(item.target);
-    }
+      }
     });
-}, imgOptions);
+  }, imgOptions);
 
-imagesToLoad.forEach((img) => {
+  imagesToLoad.forEach((img) => {
     observer.observe(img);
-});
+  });
 } else {
-imagesToLoad.forEach((img) => {
+  imagesToLoad.forEach((img) => {
     loadImages(img);
-});
+  });
 }
+function openMenu() {
+  const mainnav = document.querySelector(".nonResponsive");
+  const menup = document.querySelector(".open");
+
+  mainnav.classList.toggle("responsive");
+  menup.classList.toggle("close");
+}
+
