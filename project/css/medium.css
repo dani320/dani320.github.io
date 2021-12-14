@@ -1,0 +1,76 @@
+@media only screen and (min-width: 35em) {
+  nav ul {
+    display: flex;
+    max-width: 37em;
+    margin: 0 auto;
+  }
+  nav ul li {
+    display: block;
+    flex: 1 1 auto;
+  }
+  nav ul li:first-child {
+    display: none;
+  }
+  nav ul li a {
+    font-size: 0.8rem;
+  }
+
+  main {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 40em;
+    margin: 0 auto;
+  }
+.logo-box {
+	width: 150px;
+}
+
+.wsummary{
+        position: absolute;
+        margin: 0px;
+        top: 20px;
+        left: 20px;      
+        background-color: rgba(242, 245, 52, 0.75);
+        box-shadow: 0px 0px 5px 2px #444;
+    }
+
+    .wsummary section p{
+      font-size: 0.9rem;
+      margin: 0;
+      color: black;
+  }    
+  .wsummary section p span{
+      color: rgb(0, 0, 0);    
+  }
+
+  h3{
+    display: block;
+    text-align: center;
+    
+  }
+
+ .forecast {
+    display: flex;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.forecast td{
+  
+  border: 1px solid #000000;
+ 
+  margin: 0 2px;
+  background-color: rgba(242, 245, 52, 0.75);
+}
+.forecast-tab{
+  display: block;
+  text-align: center;
+}
+.container{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 0.8em;
+	margin-bottom: 60px;
+}
+
+}

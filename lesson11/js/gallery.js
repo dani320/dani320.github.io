@@ -5,7 +5,7 @@ document.querySelector('#lastmod').textContent = document.lastModified;
 
 let imagesToLoad = document.querySelectorAll("img[data-src]");
 const imgOptions = {
-  threshold: 2,
+  threshold: 1,
   rootMargin: "0px 0px 10px 0px",
 };
 

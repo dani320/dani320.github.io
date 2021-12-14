@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Yusei+Magic&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+
+    <title>Weather page</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo-box">
+        <img src="images/logopic.png" alt="logo weather" />
+      </div>
+      <h1>Preston 26 Weather</h1>
+      <h2 class="motto">Catch me if you can</h2>
+    </header>
+
+    <nav>
+      <ul class="nonResponsive">
+        <li>
+          <a class="menu" href="#" onclick="openMenu()"
+            ><span class="open">☰ Menu</span></a
+          >
+        </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="preston.html">Preston</a></li>
+        <li><a href="sodasprings.html">Soda Springs</a></li>
+        <li><a href="fishhaven.html">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>Home</h2>
+
+      <div class="cards"></div>
+    </main>
+
+    <footer>
+      <div class="contact_box">
+        <div class="map">
+          <img src="images/preston_map.jpg" alt="map of preston" />
+        </div>
+        <div class="contact-info">
+          <p>Email: preston26weather@gmail.com</p>
+          <p>Phone Number: (350) 748-7295</p>
+        </div>
+      </div>
+      &copy; <span id="theyear"></span> Preston 26 Weather | Daniel Florez |
+      BYUI Online Learning
+      <p>Last Modified: <span id="lastmod"></span></p>
+    </footer>
+    <script src="js/prophets.js"></script>
+  </body>
+</html>
