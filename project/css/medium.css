@@ -52,8 +52,12 @@ nav ul {
 .wsummary section p span{
   color: rgb(0, 0, 0);    
 }
-h3{
-    text-align: center;
+
+
+.days {
+  display: block;
+  text-align: center;
+  margin: 15px 10px 5px 10px;
 }
 
 .forecast {
@@ -75,8 +79,13 @@ h3{
     margin: 0 2px;
     background-color: #0c7cd881;
 }
+
+.upcoming {
+  margin: 15px auto;
+}
+
 footer {
-    background-color: #0c7dd8;
+    background-color: #0037aef1;
     text-align: center;
     color: rgb(0, 0, 0);
     font-size: 1rem;
@@ -87,5 +96,10 @@ footer {
 .contact-information img {
     max-width: 50px;
   }
+
+  .picturesbogota {
+    max-width: 100%;
+}
+
 
 }

@@ -2,7 +2,7 @@
 
 
 .contact-info {
-    max-width: 850px;
+    max-width: 1025px;
     margin: 0 auto;
     padding: 20px 20px;
     display: grid;
@@ -14,7 +14,9 @@
   max-width: 100px;
 }
 
-
+.upcoming {
+  max-width: 100%;
+}
 
 }
 

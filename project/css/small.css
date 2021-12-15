@@ -30,7 +30,7 @@ h2 {
     
   }
 
-  .logo img {
+  .logo {
       max-width: 100%;
   }
   
@@ -70,15 +70,24 @@ p.motto{
     margin: 0;
 }
 
+img{
+  max-width: 100%;
+}
+.days{
+  display: none;
+}
+.forecast {
+   display: none;
+}
 .wsummary{
     text-align: center;
     margin: 12px 20px -20px 20px;
     padding: 0;
-    background-color:turquoise;
+    background-color: #0c7dd8;
   }
   .wsummary section{
     padding: 1rem;
-    color: white;
+    color: rgb(2, 2, 2);
     line-height: 90%;
   }
   .wsummary section h4{
@@ -97,6 +106,14 @@ p.motto{
 div {
     display: block;
 }
+
+.picturesbogota{
+  grid-column: auto;
+}
+
+.upcoming {
+  text-align: center;
+}
 footer {
     background-color: #0c7dd8;
     text-align: center;
@@ -110,7 +127,7 @@ footer {
   }
 
   .contact-title{
-      text-align: center;
+      text-align: left;
   }
 
-  
+ 
