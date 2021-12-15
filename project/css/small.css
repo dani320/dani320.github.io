@@ -1,182 +1,116 @@
-
-main {
-  background-color: rgba(19, 190, 233, 0.719);
-}
-
-.storm{
-background-color: white;
-}
-
-img {
-  max-width: 100%;
-}
-
-body {
-  margin: 0 auto;
-  background-color: white;
-  font-size: medium;
-}
-
-h1, h2, h3, h4, h5, h6 {
-
-  font-family: Helvetica, Arial, sans-serif;
-}
 header {
-  margin:0 auto;
-  text-align: center;
-  background-color: rgb(2, 146, 132);
-  justify-content: center;
-  
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #0c7dd8;
+}
+header img{
+    padding: 20px 5px;
 }
 
 h2 {
-  text-align: center;
+    text-align: center;
+  }
+  
+  nav {
+    text-align: center;
+    background-color: white;
+    border: black;
+  }
+  a {
+    text-decoration: none;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0px;
+    padding: 25px;
+    
+  }
+
+  .logo img {
+      max-width: 100%;
+  }
+  
+  nav ul li:first-child {
+    display: block;
+  }
+  
+  nav ul li {
+    display: none;
+  }
+
+  
+  .responsive li {
+      display: block;
+  }
+  
+  .menu{
+    color:#0038ae;
+    background-color: white;
+  }
+  
+  .menu:hover {
+    color: #0038ae;
+    background: color #0038ae;
+  }
+
+
+p.motto{
+    display: block;
+    letter-spacing: 1pt;
+    font-size: 1rem;
+    margin-top: -15px;
 }
 
-nav {
-  text-align: center;
-  background-color: yellow;
-}
-a {
-  text-decoration: none;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li:first-child {
-  display: block;
-}
-
-nav ul li {
-  display: none;
-}
-.responsive li {
-	display: block;
-}
-
-.menu{
-  color:turquoise;
-  background-color: yellow;
-}
-
-.menu:hover {
-  color: white;
-  background-color:turquoise;
-}
-
-.ws-box {
-  position: relative;
-  margin: 0;
+.banner {
+    position: relative;
+    margin: 0;
 }
 
 .wsummary{
-  text-align: center;
-  margin: 12px 20px -20px 20px;
-  padding: 0;
-  background-color:turquoise;
-}
-.wsummary section{
-  padding: 1rem;
-  color: white;
-  line-height: 90%;
-}
-.wsummary section h4{
-  margin: 0;
-  padding-bottom: 0.5rem; 
-  color: #000;
-}
-.wsummary section p{
-  font-size: 0.9rem;
-  margin: 0;
-}
-.wsummary section p span{
-  color: #000;   
-}
-
-h3 {
-  display: none;
-}
-
-
-.forecast {
-  display: none ;
-}
-
-.city-events{
-  text-align: center;
-  margin: 30px 20px -10px 20px;
-  padding: 0;
-  
-}
-.city-events section{
-  padding: 1rem;
-  color: rgb(0, 0, 0);
-  line-height: 110%;
-
-}
-
-.city-events section h4{
-  margin: 0;
-  color: rgb(0, 0, 0);
-}
-.city-events section p{
-  font-size: 1.3rem;
-  margin: 0;
-}
-.article{
-  margin: 20px 0px;
-  font-size: large;
-  
-}
-.article section{
-  padding: 20px;
-  text-align: center;
-  
-}
-
-.article h4{
-  text-align: center;
-}
-
-div.cards section {
-  
-  text-align: center;
-  margin: 5px;
-  
-}
-section img {
-  max-width: 100%;
-}
-
-.contact_box {
-  display: flex;
-  max-width: 100%;
-  padding: 0;
-  background-color: rgb(2, 146, 132);
-}
-
-.map img{
-  max-width: 50%;
+    text-align: center;
+    margin: 12px 20px -20px 20px;
+    padding: 0;
+    background-color:turquoise;
+  }
+  .wsummary section{
+    padding: 1rem;
+    color: white;
+    line-height: 90%;
+  }
+  .wsummary section h4{
+    margin: 0;
+    padding-bottom: 0.5rem; 
+    color: black;
+  }
+  .wsummary section p{
+    font-size: 1rem;
+    margin: 0;
+  }
+  .wsummary section p span{
+    color: rgb(0, 0, 0);   
+  }    
+ 
+div {
+    display: block;
 }
 footer {
-  font-family: Helvetica, Arial, sans-serif;
-  text-align: center;
-  color: rgb(0, 0, 0);
-  font-size: 0.9rem;
+    background-color: #0c7dd8;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    display: block;
 }
 
+.contact-information img {
+    max-width: 30px;
+  }
 
-.container{
-  margin: 0 auto;
-  padding: 0px 20px;
-  margin-bottom: 35px;
-}
+  .contact-title{
+      text-align: center;
+  }
 
-.thanks {
-  text-align: center;
-}
-
+  

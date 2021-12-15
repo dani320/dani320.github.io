@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bogota Chamber of Commerce</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Yusei+Magic&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link rel="icon" href="images/logo.jpg" type="images/x-icon">
+
+    <title>Chamber of Commerce</title>
+</head>
+
+<body>
+    <header>
+
+        <div style="width: 250px; height: 200px;">
+            <a href="index.html"> <img src="images/logo.jpg" style="width: 230px; height: 200px;" /> </a>
+        </div>
+        <section>
+            <h1>Chamber of Commerce Bogota</h1>
+            <p class="motto">We are here to serve you</p>
+        </section>
+    </header>
+
+    <nav>
+        <ul class="nonResponsive">
+            <li>
+                <a class="menu" href="#" onclick="openMenu()"><span class="open">☰ Menu</span></a>
+            </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="city.html">City</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="only">
+
+        <div class="banner">
+            <picture>
+                <source media="(max-width: 36em)" srcset="images/banner.jpg">
+                <source media="(max-width: 52em)" srcset="images/banner.jpg">
+                <source media="(min-width: 56em)" srcset="images/banner.jpg">
+                <img src="images/banner.jpg" alt="Bogota banner">
+            </picture>
+        </div>
+
+        <div class="member-plans">
+            <p>
+                We offer 4 different member plans which, non-profit, bronze, silver and gold. The non-profit will cost $100 and will
+                include the ability to help other businesses and an online consultation. Bronze has a price of $200. Includes the 
+                above and additionally will include a two hour training. Silver has a price of $400. Includes a directory listings and business
+                trainings. Includes all of the above. The last membership plan that we offer is gold. Gold has a price of $400. It includes all
+                of the above including social media posts, luncheon tickets, sponsorships with levels of advertising, additionally we will have a one 
+                on one consultation. <br>
+                Don't forget to join! We are excited to have you onboard. 
+            </p>
+        </div>
+
+        <form action="thanks.html" method="get" style="text-align: center;">
+            <fieldset>
+                <legend>JOIN</legend>
+                <label for="fname">First name:*</label><br>
+                <input type="text" id="fname" name="fname" placeholder="John" required><br>
+                <label for="lname">Last name:*</label><br>
+                <input type="text" id="lname" name="lname" placeholder="Doe"><br>
+                <label for="title">Title:</label><br>
+                <input type="text" id="title" name="title" placeholder="Title"><br>
+                <label type="email">Email:*</label><br>
+                <input type="email" id="email" name="email" placeholder="ccb@gmail.com" required><br>
+                <label type="phone">Phone:</label><br>
+                <input type="tel" name="phone" placeholder="8435558865" /><br>
+                <label for="fname">Business name:*</label><br>
+                <input type="text" id="business-name" name="business-name" placeholder="Coastal Enterprise"
+                    required><br>
+                <label for="street"> Business address:</label><br>
+                <input type="street" id="street" name="street" placeholder="Please enter full address"><br>
+                <label for="website">Business website:</label><br>
+                <input type="text" id="website" name="website" placeholder="business website"><br>
+                <label for="description">Business description:</label><br>
+                <textarea name="description" id="description" placeholder="A description about your business." cols="30"
+                    rows="10"></textarea><br>
+                <label for="membership">Membership type:</label>
+                <select name="membership" id="membership">
+                    <option value="Non-profit">Non-profit</option>
+                    <option value="Bronze">Bronze</option>
+                    <option value="Silver">Silver</option>
+                    <option value="Silver">Gold</option>
+                </select><br>
+            </fieldset>
+            <input type="submit" value="Join" />
+        </form>
+
+
+    </main>
+
+    <footer>
+
+
+      
+        &copy; <span id="theyear"></span> Chamber of Commerce Bogota | Daniel
+        Florez | BYUI Online Learning
+        <p>Last Modified: <span id="lastmod"></span></p>
+    </footer>
+    <script src="js/project.js"></script>
+</body>
+
+</html>

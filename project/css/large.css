@@ -1,21 +1,24 @@
-@media only screen and (min-width: 56em) {
-  nav ul {
-    max-width: 960px;
-  }
+@media only screen and (min-width: 56em){
 
-  nav ul li a {
-    font-size: 1.5rem;
-  }
-  main {
-    max-width: 1025px;
-  }
 
-  div.cards {
-    display: flex;
-  }
-  div.cards section {
-    display: block;
-  }
-
-  
+.contact-info {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 20px 20px;
+    display: grid;
+    grid-template-columns: 65% 35%;
+    text-align: left;
 }
+
+.contact-information img {
+  max-width: 100px;
+}
+
+
+
+}
+
+
+
+
+

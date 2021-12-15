@@ -1,66 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Yusei+Magic&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/small.css" />
-    <link rel="stylesheet" href="css/medium.css" />
-    <link rel="stylesheet" href="css/large.css" />
 
-    <title>Weather page</title>
-  </head>
-  <body>
-    <header>
-      <div class="logo-box">
-        <img src="images/logopic.png" alt="logo weather" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bogota Chamber of Commerce</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Yusei+Magic&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/small.css" />
+  <link rel="stylesheet" href="css/medium.css" />
+  <link rel="stylesheet" href="css/large.css" />
+  <link rel="icon" href="images/logo.jpg" type="images/x-icon">
+
+  <title>Chamber of Commerce</title>
+</head>
+
+<body>
+  <header>
+
+
+
+    <div class="logo" style="width: 250px; height: 200px;">
+      <a href="index.html"> <img src="images/logo.jpg" style="width: 230px; height: 200px;" /> </a>
+    </div>
+
+    <section>
+      <h1>Chamber of Commerce Bogota</h1>
+      <p class="motto">We are here to serve you</p>
+    </section>
+  </header>
+
+  <nav>
+    <ul class="nonResponsive">
+      <li>
+        <a class="menu" href="#" onclick="openMenu()"><span class="open">☰ Menu</span></a>
+      </li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="city.html">City</a></li>
+      <li><a href="join.html">Join</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div class="banner">
+
+      <picture>
+        <source media="(max-width: 36em)" srcset="images/banner.jpg">
+        <source media="(max-width: 52em)" srcset="images/banner.jpg">
+        <source media="(min-width: 56em)" srcset="images/banner.jpg">
+        <img src="images/banner.jpg" alt="Bogota banner">
+      </picture>
+      <div class="wsummary">
+        <section>
+          <h4>Weather Summary</h4>
+          <p>Current: <span id="current">sunny</span></p>
+          <p>High: <span><span id="tem">50</span>° F</span></p>
+          <p>wind chill: <span id="wc">48° F</span></p>
+          <p>Humidity: <span><span id="humidity">87</span>%</span></p>
+          <p>Wind speed: <span><span id="ws">5.91</span> mph.</span></p>
+        </section>
       </div>
-      <h1>Preston 26 Weather</h1>
-      <h2 class="motto">Catch me if you can</h2>
-    </header>
+    </div>
 
-    <nav>
-      <ul class="nonResponsive">
-        <li>
-          <a class="menu" href="#" onclick="openMenu()"
-            ><span class="open">☰ Menu</span></a
-          >
-        </li>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="preston.html">Preston</a></li>
-        <li><a href="sodasprings.html">Soda Springs</a></li>
-        <li><a href="fishhaven.html">Fish Haven</a></li>
-        <li><a href="stormcenter.html">Storm Center</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-      </ul>
-    </nav>
+    <h3> 3 Day forecast</h3>
 
-    <main>
-      <h2>Home</h2>
+    <div class="forecast">
+      <section>
+        <h5>Friday</h5><img src="http://openweathermap.org/img/wn/04d@2x.png" alt="broken clouds">
+        <p>48° F</p>
+        <p>Sunny cloudy <br> Chance of rain</p>
+      </section>
+      <section>
+        <h5>Saturday</h5><img src="http://openweathermap.org/img/wn/04d@2x.png" alt="broken clouds">
+        <p>50° F</p>
+        <p>Sunny cloudy</p>
+      </section>
+      <section>
+        <h5>Sunday</h5><img src="http://openweathermap.org/img/wn/04d@2x.png" alt="broken clouds">
+        <p>45° F</p>
+        <p>Cloudy <br> Chance of rain</p>
+      </section>
+    </div>
 
-      <div class="cards"></div>
-    </main>
+  </main>
 
-    <footer>
-      <div class="contact_box">
-        <div class="map">
-          <img src="images/preston_map.jpg" alt="map of preston" />
-        </div>
-        <div class="contact-info">
-          <p>Email: preston26weather@gmail.com</p>
-          <p>Phone Number: (350) 748-7295</p>
-        </div>
-      </div>
-      &copy; <span id="theyear"></span> Preston 26 Weather | Daniel Florez |
-      BYUI Online Learning
-      <p>Last Modified: <span id="lastmod"></span></p>
-    </footer>
-    <script src="js/prophets.js"></script>
-  </body>
+  <footer>
+
+
+    <div class="contact-info">
+      <section class="contact-information">
+        <h3 class="contact-title">Contact Information</h3>
+        <p>Email: ccb@gmail.com</p>
+        <p>Phone Number: (350) 748-7295</p>
+        <a href="https://www.facebook.com/">
+          <img src="images/FB_logo.png" alt="facebook logo" /></a>
+        <a href="https://www.youtube.com/">
+          <img src="images/youtube-logo.png" alt="youtube logo" /></a>
+      </section>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254508.51641081928!2d-74.24789468446681!3d4.64828371716892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2zQm9nb3TDoSwgQm9nb3Rh!5e0!3m2!1sen!2sco!4v1639538578221!5m2!1sen!2sco"
+        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    &copy; <span id="theyear"></span> Chamber of Commerce Bogota | Daniel
+    Florez | BYUI Online Learning
+    <p>Last Modified: <span id="lastmod"></span></p>
+  </footer>
+  <script src="js/project.js"></script>
+</body>
+
 </html>

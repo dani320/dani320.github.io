@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bogota Chamber of Commerce</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Yusei+Magic&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link rel="icon" href="images/logo.jpg" type="images/x-icon">
+
+    <title>Chamber of Commerce</title>
+</head>
+
+<body>
+    <header>
+
+        <div style="width: 250px; height: 200px;">
+            <a href="index.html"> <img src="images/logo.jpg" style="width: 230px; height: 200px;" /> </a>
+        </div>
+        <section>
+            <h1>Chamber of Commerce Bogota</h1>
+            <p class="motto">We are here to serve you</p>
+        </section>
+    </header>
+
+    <nav>
+        <ul class="nonResponsive">
+            <li>
+                <a class="menu" href="#" onclick="openMenu()"><span class="open">☰ Menu</span></a>
+            </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="city.html">City</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="only">
+
+        <div class="banner">
+            <picture>
+                <source media="(max-width: 36em)" srcset="images/banner.jpg">
+                <source media="(max-width: 52em)" srcset="images/banner.jpg">
+                <source media="(min-width: 56em)" srcset="images/banner.jpg">
+                <img src="images/banner.jpg" alt="Bogota banner">
+            </picture>
+        </div>
+
+        <div class="contact-info">
+            <section class="contact-information">
+                <h3 class="contact-title">Contact Information</h3>
+                <p>Email: ccb@gmail.com</p>
+                <p>Phone Number: (350) 748-7295</p>
+                <a href="https://www.facebook.com/">
+                    <img src="images/FB_logo.png" alt="facebook logo" /></a>
+                <a href="https://www.youtube.com/">
+                    <img src="images/youtube-logo.png" alt="youtube logo" /></a>
+            </section>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254508.51641081928!2d-74.24789468446681!3d4.64828371716892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2zQm9nb3TDoSwgQm9nb3Rh!5e0!3m2!1sen!2sco!4v1639538578221!5m2!1sen!2sco"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <div class="contact-us">
+            <form action="contact-us.html" method="get">
+                <fieldset style="text-align: center;">
+                    <legend>JOIN</legend>
+                    <label for="fname">First name:*</label><br>
+                    <input type="text" id="fname" name="fname" placeholder="John" required><br>
+                    <label for="lname">Last name:*</label><br>
+                    <input type="text" id="lname" name="lname" placeholder="Doe"><br>
+                    <label type="email">Email:*</label><br>
+                    <input type="email" id="email" name="email" placeholder="ccb@gmail.com" required><br>
+                    <label type="phone">Phone:</label><br>
+                    <input type="tel" name="phone" placeholder="8435558865" /><br>
+                    <label for="description">Tell us more:</label><br>
+                    <textarea name="description" id="description" placeholder="A description about your business." cols="30"
+                        rows="10"></textarea><br>
+                    
+                </fieldset>
+                <input type="submit" value="Contact me" />
+            </form>
+
+
+
+        </div>
+
+
+
+    </main>
+
+    <footer>
+
+        &copy; <span id="theyear"></span> Chamber of Commerce Bogota | Daniel
+        Florez | BYUI Online Learning
+        <p>Last Modified: <span id="lastmod"></span></p>
+    </footer>
+    <script src="js/project.js"></script>
+</body>
+
+</html>
