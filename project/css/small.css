@@ -1,116 +1,113 @@
 header {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    background-color: #0c7dd8;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: #0c7dd8;
 }
-header img{
-    padding: 20px 5px;
+header img {
+  padding: 20px 5px;
 }
 
 h2 {
-    text-align: center;
-  }
-  
-  nav {
-    text-align: center;
-    background-color: white;
-    border: black;
-  }
-  a {
-    text-decoration: none;
-  }
-  
-  nav ul {
-    list-style: none;
-    margin: 0px;
-    padding: 25px;
-    
-    
-  }
+  text-align: center;
+}
 
-  
+nav {
+  text-align: center;
+  background-color: white;
+  border: black;
+}
+a {
+  text-decoration: none;
+}
 
-  .logo {
-      max-width: 100%;
-  }
-  
-  nav ul li:first-child {
-    display: block;
-  }
-  
-  nav ul li {
-    display: none;
-  }
+nav ul {
+  list-style: none;
+  margin: 10px;
+  padding: 25px;
+}
 
-  
-  .responsive li {
-      display: block;
-  }
-  
-  .menu{
-    color:#0038ae;
-    background-color: white;
-  }
-  
-  .menu:hover {
-    color: #0038ae;
-    background: color #0038ae;
-  }
+nav ul li:hover {
+  background-color: rgba(187, 179, 179, 0.808);
+}
 
+.logo {
+  max-width: 100%;
+}
 
-p.motto{
-    display: block;
-    letter-spacing: 1pt;
-    font-size: 1rem;
-    margin-top: -15px;
+nav ul li:first-child {
+  display: block;
+}
+
+nav ul li {
+  display: none;
+}
+
+.responsive li {
+  display: block;
+}
+
+.menu {
+  color: #0038ae;
+  background-color: white;
+}
+
+.menu:hover {
+  color: #0038ae;
+  background-color: #0037ae4f;
+}
+
+p.motto {
+  display: block;
+  letter-spacing: 1pt;
+  font-size: 1rem;
+  margin-top: -15px;
 }
 
 .banner {
-    position: relative;
-    margin: 0;
+  position: relative;
+  margin: 0;
 }
 
-img{
+img {
   max-width: 100%;
 }
-.days{
+.days {
   display: none;
 }
 .forecast {
-   display: none;
+  display: none;
 }
-.wsummary{
-    text-align: center;
-    margin: 0 auto;
-    padding: 0;
-    
-  }
-  .wsummary section{
-    padding: 1rem;
-    color: rgb(2, 2, 2);
-    line-height: 90%;
-  }
-  .wsummary section h4{
-    margin: 0;
-    padding-bottom: 0.5rem; 
-    color: black;
-  }
-  .wsummary section p{
-    font-size: 1rem;
-    margin: 0;
-  }
-  .wsummary section p span{
-    color: rgb(0, 0, 0);   
-  }    
- 
-div {
-    display: block;
+.wsummary {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+}
+.wsummary section {
+  padding: 1rem;
+  color: rgb(2, 2, 2);
+  line-height: 90%;
+}
+.wsummary section h4 {
+  margin: 0;
+  padding-bottom: 0.5rem;
+  color: black;
+}
+.wsummary section p {
+  font-size: 1rem;
+  margin: 0;
+}
+.wsummary section p span {
+  color: rgb(0, 0, 0);
 }
 
-.picturesbogota{
+div {
+  display: block;
+}
+
+.picturesbogota {
   grid-column: auto;
 }
 
@@ -118,19 +115,17 @@ div {
   text-align: center;
 }
 footer {
-    background-color: #0c7dd8;
-    text-align: center;
-    color: rgb(0, 0, 0);
-    font-size: 1rem;
-    display: block;
+  background-color: #0c7dd8;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  display: block;
 }
 
 .contact-information img {
-    max-width: 30px;
-  }
+  max-width: 30px;
+}
 
-  .contact-title{
-      text-align: left;
-  }
-
- 
+.contact-title {
+  text-align: left;
+}
