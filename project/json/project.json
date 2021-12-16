@@ -1,0 +1,45 @@
+{
+    "directory" : [
+        {
+            "businessname": "Creeps and Waffles ",
+            "phonenumber":"676-7600",
+            "address":"Cra. 20 #164a-05"
+            
+        },
+        {
+            "businessname":"Colombian burger Company" ,
+            "phonenumber": "765-0913",
+            "address":"Calle 88 #112g-05"
+            
+        },
+        {
+            "businessname": "Innovet",
+            "phonenumber": "496-1414",
+            "address": "Calle 88 #112g-18",
+            "email": "clinnovetciudadela@gmail.com"
+        },
+        {
+            "businessname": "El tolimense",
+            "phonenumber": "600-4323",
+            "address":"Calle 112 #70b-06",
+            "email": "el.tolimense@hotmail.com" 
+        },
+        {
+            "businessname":"Doña Eugenia" ,
+            "phonenumber": "201-3161",
+            "address": "Av calle 19 #25-04 local 81374",
+            "email": "apicarse@gmail.com" 
+        },
+        {
+            "businessname":"furver los paisas",
+            "phonenumber": "467-9520",
+            "address":"Calle 86A #113-06"  
+        },
+        {
+            "businessname": "Archies",
+            "phonenumber":"605-0505" ,
+            "address":"Cra 56 Bis # 79-26",
+            "email": "helpdesk@archiesonlone.com"
+        }
+    ]
+}
