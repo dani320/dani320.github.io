@@ -28,7 +28,10 @@ h2 {
     margin: 0px;
     padding: 25px;
     
+    
   }
+
+  
 
   .logo {
       max-width: 100%;
@@ -81,9 +84,9 @@ img{
 }
 .wsummary{
     text-align: center;
-    margin: 12px 20px -20px 20px;
+    margin: 0 auto;
     padding: 0;
-    background-color: #0c7dd8;
+    
   }
   .wsummary section{
     padding: 1rem;

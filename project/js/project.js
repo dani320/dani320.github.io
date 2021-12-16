@@ -14,7 +14,7 @@ function openMenu() {
 
 
 
-  const requestURL = 'https://raw.githubusercontent.com/dani320/dani320.github.io/6227a94c04f28ac37c39d4d15262216e6d0a988c/project/json/prophets.json';
+  const requestURL = 'https://raw.githubusercontent.com/dani320/dani320.github.io/master/project/json/project.json';
 
 fetch(requestURL)
   .then(function (response) {
@@ -22,25 +22,25 @@ fetch(requestURL)
   })
   .then(function (jsonObject) {
     console.table(jsonObject); 
-    const prophets = jsonObject['prophets'];
-    prophets.forEach((prophet) => {
+    const directory = jsonObject['directory'];
+    directory.forEach((directory) => {
         let card = document.createElement('section');
-        let h2 = document.createElement('h2');
-        let birth = document.createElement('h4');
-        let place = document.createElement('h4');
-        let img = document.createElement('img');
+        
+        let business = document.createElement('h2')
+        let phone = document.createElement('h4');
+        let address = document.createElement('h4');
+        let email = document.createElement('h4');
 
-        h2.innerHTML = `${prophet.name} ${prophet.lastname}`;
-        birth.innerHTML = `Date of Birth: ${prophet.birthdate}`;
-        place.innerHTML = `Place of Birth: ${prophet.birthplace}`;
-        img.setAttribute('src', `${prophet.imageurl}`);
-        img.setAttribute('alt', `${prophet.name} ${prophet.lastname} - ${prophet.order}`);
+        business.innerHTML = `${directory.businessname} `;
+        phone.innerHTML = `Phone number: ${directory.phonenumber}`;
+        address.innerHTML = `Address: ${directory.address}`;
+        email.innerHTML = `Email: ${directory.email}`;
 
 
-        card.appendChild(h2);
-        card.appendChild(birth);
-        card.appendChild(place);
-        card.appendChild(img);
+        card.appendChild(business);
+        card.appendChild(phone);
+        card.appendChild(address);
+        card.appendChild(email);
 
         document.querySelector('div.cards').appendChild(card);
         });

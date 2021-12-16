@@ -1,4 +1,4 @@
-@media only screen and (min-width: 35em){
+@media only screen and (min-width: 45em){
 
     main {
         padding-left: 25px;
@@ -74,10 +74,10 @@ nav ul {
 
 .forecast section{
     text-align: center;
-    border: 1px solid #0c7dd8;
+    border: 1px solid #000000;
     flex: 1 1 auto;
     margin: 0 2px;
-    background-color: #0c7cd881;
+    background-color: rgb(187, 179, 179)
 }
 
 .upcoming {
@@ -102,4 +102,30 @@ footer {
 }
 
 
+}
+
+.cards {
+  background-color: #0038ae;
+  max-width: 950px;
+  margin: 15px;
+}
+h1 {
+  text-align: center;
+}
+div.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  margin: 40px;
+  text-align: center;
+}
+section {
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 30px;
+  background-color: rgba(187, 179, 179, 0.808);
+}
+
+fieldset{
+  border-radius: 15px;
 }
